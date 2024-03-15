@@ -5,9 +5,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
+  height: 60px;
   width: -webkit-fill-available;
-  border-radius: 24px;
+  border-radius: 8px;
   @include media-min($medium){
     margin: 16px auto;
     width: fit-content;
@@ -29,33 +29,22 @@
     }
   }
   span {
-    font-family: Inter;
-    font-size: 1.2rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
     margin: 0;
     padding: 0 0 0 4px;
-    @include media-min($medium) {
-      font-size: 1.2rem;
-    }
-    @include media-min($large) {
-      font-size: 1.4rem;
-    }
   }
 
 }
 .btn-secondary {
-  color: $primary_base;
+  color: $secondary_base;
   background: $white;
-  border: solid 1px $primary_base;
+  border: solid 1px $secondary_base;
   path {
-    fill: $primary_base;
+    fill: $secondary_base;
   }
 }
 .btn-primary {
   color: $white;
-  background: $primary_base;
+  background: $secondary_base;
   path {
     fill: $white;
   }
@@ -63,7 +52,7 @@
 .btn-primary, .btn-secondary {
   transition: 0.3s;
   &:hover {
-    background: $primary_dark;
+    background: $secondary_dark;
     color: $white;
     path {
       fill: $white;

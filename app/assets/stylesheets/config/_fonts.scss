@@ -1,16 +1,23 @@
 // Import Google fonts
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Raleway:wght@300&family=Roboto:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700&display=swap');
+
 
 // Define fonts for body and headers
 $body-font: "Roboto", "Helvetica", "sans-serif";
-$headers-font: "Inter", "Helvetica", "sans-serif";
+$headers-font: "Noto Sans", "Helvetica", "sans-serif";
 
 @import "colors";
 @import "breakpoints";
 
 h1, h2, h3, p {
   color: $black;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 h1, h2, h3 {
@@ -21,54 +28,52 @@ h1, h2, h3 {
   @include media-min($large) {
     margin: 24px 0 24px 0;
   }
+  font-family: $headers-font;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
 p {
   margin: 8px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 h1 {
-  font-family: $headers-font;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 1.6rem;
+  font-size: 32px;
 
   @include media-min($medium) {
-    font-size: 1.8rem;
+    font-size: 40px;
   }
   @include media-min($large) {
-    font-size: 2rem;
+    font-size: 52px;
   }
 }
 
 h2 {
-  font-family: $headers-font;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 1.4rem;
+  font-size: 24px;
 
   @include media-min($medium) {
-    font-size: 1.6rem;
+    font-size: 28px;
   }
   @include media-min($large) {
-    font-size: 1.8rem;
+    font-size: 32px;
   }
 }
 
 h3 {
-  font-family: Inter;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 500;
+  font-size: 20px;
   line-height: normal;
 
   @include media-min($medium) {
-    font-size: 1.4rem;
+    font-size: 20px;
   }
   @include media-min($large) {
-    font-size: 1.6rem;
+    font-size: 24px;
   }
 }
 
@@ -76,11 +81,43 @@ p {
   font-family: $body-font;
   font-style: normal;
   font-weight: 300;
-  // line-height: 1.4rem;
-  font-size: 1rem;
+  font-size: 16px;
 
   @include media-min($medium) {
-    font-size: 1.2rem;
+    font-size: 18px;
+  }
+}
+
+.p2 {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+
+  @include media-min($medium) {
+    font-size: 14px;
+  }
+}
+
+.logo-font {
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+
+  @include media-min($medium) {
+    font-size: 30px;
+  }
+}
+
+.btn > div > span {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  @include media-min($medium) {
+    font-size: 18px;
   }
 }
 

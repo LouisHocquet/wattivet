@@ -13,6 +13,12 @@ $primary_base: #5D6CB3;
 $primary_light: #D9E0FF;
 $primary_lightiest: #F5F7FF;
 
+// Secondary
+$secondary_dark: #6FC26B;
+$secondary_base: #85DF80;
+$secondary_light: #E4FFE2;
+$secondary_lightiest: #F5FFF5;
+
 // System
 $red: #FD1015;
 $yellow: #FFC65A;
@@ -59,6 +65,10 @@ $text-highlight: $primary_lightiest;
   .color-primary-base { background: $primary_base; }
   .color-primary-light { background: $primary_light; }
   .color-primary-lightiest { background: $primary_lightiest; }
+  .color-secondary-dark { background: $secondary_dark; }
+  .color-secondary-base { background: $secondary_base; }
+  .color-secondary-light { background: $secondary_light; }
+  .color-secondary-lightiest { background: $secondary_lightiest; }
   .color-red { background: $red; }
   .color-yellow { background: $yellow; }
   .color-green { background: $green; }
