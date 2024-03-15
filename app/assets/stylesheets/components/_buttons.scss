@@ -1,0 +1,83 @@
+.btn {
+  text-decoration: none;
+  padding: 0 24px;
+  margin: 8px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: -webkit-fill-available;
+  border-radius: 24px;
+  @include media-min($medium){
+    margin: 16px auto;
+    width: fit-content;
+  }
+  @include media-min($large){
+    margin: 24px auto;
+  }
+  div {
+    display: flex;
+    align-items: center;
+  }
+  svg {
+    margin: 0;
+    height: 24px;
+    width: 24px;
+    @include media-min($medium) {
+      height: 28px;
+      width: 28px;
+    }
+  }
+  span {
+    font-family: Inter;
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+    padding: 0 0 0 4px;
+    @include media-min($medium) {
+      font-size: 1.2rem;
+    }
+    @include media-min($large) {
+      font-size: 1.4rem;
+    }
+  }
+
+}
+.btn-secondary {
+  color: $primary_base;
+  background: $white;
+  border: solid 1px $primary_base;
+  path {
+    fill: $primary_base;
+  }
+}
+.btn-primary {
+  color: $white;
+  background: $primary_base;
+  path {
+    fill: $white;
+  }
+}
+.btn-primary, .btn-secondary {
+  transition: 0.3s;
+  &:hover {
+    background: $primary_dark;
+    color: $white;
+    path {
+      fill: $white;
+    }
+  }
+}
+.icon-off {
+  svg {
+    display: none;
+  }
+}
+
+// For design page
+.btns-list {
+  display: flex;
+  flex-wrap: wrap;
+}

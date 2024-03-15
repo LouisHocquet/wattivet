@@ -1,10 +1,65 @@
-// Define variables for your color scheme
+// Monochrome
+$black: #1F1F1F;
+$gray: #5C5C5C; // Opacity 30% for overlay
+$light_gray: #EBEBEB;
+$white: #FFFFFC;
 
-// For example:
+// Background
+$background: $white;
+
+// Primary
+$primary_dark: #485696;
+$primary_base: #5D6CB3;
+$primary_light: #D9E0FF;
+$primary_lightiest: #F5F7FF;
+
+// System
 $red: #FD1015;
-$blue: #0D6EFD;
 $yellow: #FFC65A;
-$orange: #E67E22;
 $green: #1EDD88;
-$gray: #0E0000;
-$light-gray: #F4F4F4;
+
+// Effects
+$box_shadow: -2px 2px 8px 0px rgba(93, 108, 179, 0.30);
+$overlay: rgba(92, 92, 92, 0.30);
+$border-radius: 8px;
+$text-highlight: $primary_lightiest;
+
+// Color blocks for design page
+.colors-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.text-highlight { background: $text-highlight; }
+.color-item {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 8px;
+  div {
+    width: 148px;
+    height: 112px;
+    border-radius: $border-radius;
+  }
+  p {
+    width: 148px;
+    margin: 0;
+  }
+  p:first-of-type {
+    font-weight: 500;
+    margin-top: 8px;
+  }
+  .color-black { background: $black; }
+  .color-gray { background: $gray; }
+  .color-light-gray { background: $light_gray; }
+  .color-white {
+    background: $white;
+    border: solid 1px $gray;
+  }
+  .color-primary-dark { background: $primary_dark; }
+  .color-primary-base { background: $primary_base; }
+  .color-primary-light { background: $primary_light; }
+  .color-primary-lightiest { background: $primary_lightiest; }
+  .color-red { background: $red; }
+  .color-yellow { background: $yellow; }
+  .color-green { background: $green; }
+}
