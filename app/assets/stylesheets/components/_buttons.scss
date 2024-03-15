@@ -9,11 +9,11 @@
   width: -webkit-fill-available;
   border-radius: $border-radius;
   @include media-min($medium){
-    margin: 16px auto;
+    margin: 16px 8px;
     width: fit-content;
   }
   @include media-min($large){
-    margin: 24px auto;
+    margin: 24px 8px;
   }
   div {
     display: flex;
