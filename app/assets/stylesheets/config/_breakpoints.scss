@@ -1,0 +1,41 @@
+// Breakpoints
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$x_large: 1200px;
+
+@mixin media-min($_min-width) {
+  @media screen and (min-width: $_min-width) {
+    &{ @content; }
+  }
+}
+
+$padding-y : 16px 0;
+$padding-bottom : 0 0 16px 0;
+$padding-x : 0 16px;
+$padding-xy : 16px;
+
+@media screen and (min-width: $small) {
+  $padding-y : 24px 0;
+  $padding-bottom : 0 0 24px 0;
+  $padding-x : 0 16px;
+  $padding-xy : 24px 16px;
+}
+@media screen and (min-width: $medium) {
+  $padding-y : 32px 0;
+  $padding-bottom : 0 0 32px 0;
+  $padding-x : 0 24px;
+  $padding-xy : 32px 24px;
+}
+@media screen and (min-width: $large) {
+  $padding-y : 40px 0;
+  $padding-bottom : 0 0 40px 0;
+  $padding-x : 0 32px;
+  $padding-xy : 40px 32px;
+}
+@media screen and (min-width: $x-large) {
+  $padding-y : 48px 0;
+  $padding-bottom : 0 0 48px 0;
+  $padding-x : 0 40px;
+  $padding-xy : 48px 40px;
+}

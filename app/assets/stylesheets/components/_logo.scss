@@ -1,0 +1,30 @@
+.text-logo {
+  display: flex;
+  align-items: center;
+
+  height: fit-content;
+
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  font-size: 1.25rem;
+
+  @include media-min($large) {
+    font-size: 1.8rem;
+  }
+
+  color: $primary_base;
+  svg path{
+    stroke: $primary_base;
+  }
+}
+
+.text-logo svg {
+  height: 30px;
+  width: 30px;
+  @include media-min($large) {
+    height: 36px;
+    width: 36px;
+  }
+}

@@ -1,9 +1,125 @@
 // Import Google fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400;700&display=swap');
+
 
 // Define fonts for body and headers
-$body-font: "Work Sans", "Helvetica", "sans-serif";
-$headers-font: "Nunito", "Helvetica", "sans-serif";
+$body-font: "Roboto", "Helvetica", "sans-serif";
+$headers-font: "Noto Sans", "Helvetica", "sans-serif";
+
+@import "colors";
+@import "breakpoints";
+
+h1, h2, h3, p {
+  color: $black;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1, h2, h3 {
+  margin: 12px 0 12px 0;
+  @include media-min($small) {
+    margin: 16px 0 16px 0;
+  }
+  @include media-min($large) {
+    margin: 24px 0 24px 0;
+  }
+  font-family: $headers-font;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+p {
+  margin: 8px 0 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 32px;
+
+  @include media-min($medium) {
+    font-size: 40px;
+  }
+  @include media-min($large) {
+    font-size: 52px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+
+  @include media-min($medium) {
+    font-size: 28px;
+  }
+  @include media-min($large) {
+    font-size: 32px;
+  }
+}
+
+h3 {
+  font-size: 20px;
+  line-height: normal;
+
+  @include media-min($medium) {
+    font-size: 20px;
+  }
+  @include media-min($large) {
+    font-size: 24px;
+  }
+}
+
+p {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+
+  @include media-min($medium) {
+    font-size: 18px;
+  }
+}
+
+.p2 {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+
+  @include media-min($medium) {
+    font-size: 14px;
+  }
+}
+
+.logo-font {
+  font-family: $headers-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+
+  @include media-min($medium) {
+    font-size: 30px;
+  }
+}
+
+.btn > div > span {
+  font-family: $body-font;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+
+  @include media-min($medium) {
+    font-size: 18px;
+  }
+}
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
