@@ -1,10 +1,2 @@
-<div class="container">
-  <h1>Bienvenue sur Wattivet !</h1>
-  <p> 🚧 Site en travaux, à venir très bientôt mais vous pouvez voir le design system ici 🚧</p>
-  <%= link_to design_path, class: "btn btn-primary", style: "align-self: start;" do %>
-    <div class="btn-content">
-      <span>Accéder au Design System</span>
-    </div>
-  <% end %>
-  <%= cl_image_tag("wattivet/outdoor-min", width: 400, height: 300, crop: :fill) %>
-</div>
+<%= render "components/navbar" %>
+<%= render "components/banner" %>
