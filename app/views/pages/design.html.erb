@@ -16,25 +16,25 @@
     <a class="btn btn-primary" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Primary with icon</span>
+        <span class="btn-font" >Primary with icon</span>
       </div>
     </a>
     <a class="btn btn-primary icon-off" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Primary no icon</span>
+        <span class="btn-font" >Primary no icon</span>
       </div>
     </a>
     <a class="btn btn-secondary" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Secondary with icon</span>
+        <span class="btn-font" >Secondary with icon</span>
       </div>
     </a>
     <a class="btn btn-secondary icon-off" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Secondary no icon</span>
+        <span class="btn-font" >Secondary no icon</span>
       </div>
     </a>
   </div>
@@ -131,7 +131,6 @@
 </div>
 <div class="container">
   <h2 class = "text-highlight">Navbar & Logo</h2>
-
   <%= render "components/logo" %>
 </div>
-<div class="navbar"></div>
+<%= render "components/navbar" %>
