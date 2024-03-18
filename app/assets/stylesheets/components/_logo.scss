@@ -14,10 +14,8 @@
 }
 
 .logo img {
-  // @include media-min($medium) {
-  //   height: 72px;
-  //   width: 72px
-  // }
+  height: 64px;
+  width: 64px;
 
   @include media-min($large) {
     height: 72px;
