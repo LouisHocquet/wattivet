@@ -1,30 +1,26 @@
-.text-logo {
+.logo {
   display: flex;
   align-items: center;
+  width: fit-content;
+}
 
-  height: fit-content;
-
-  font-family: $headers-font;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-size: 1.25rem;
+.logo p {
+  color: $primary_base;
+  margin-left: 8px;
 
   @include media-min($large) {
-    font-size: 1.8rem;
-  }
-
-  color: $primary_base;
-  svg path{
-    stroke: $primary_base;
+    margin-left: 12px;
   }
 }
 
-.text-logo svg {
-  height: 30px;
-  width: 30px;
+.logo img {
+  // @include media-min($medium) {
+  //   height: 72px;
+  //   width: 72px
+  // }
+
   @include media-min($large) {
-    height: 36px;
-    width: 36px;
+    height: 72px;
+    width: 72px
   }
 }

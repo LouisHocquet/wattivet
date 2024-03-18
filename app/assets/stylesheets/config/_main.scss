@@ -17,30 +17,29 @@ hr {
 }
 
 section {
-  padding: $padding-bottom;
 }
 
 .container{
   width: 100%;
   margin: auto;
   box-sizing: border-box;
-  padding: $padding-xy;
+  padding: 64px 16px;
 
   @include media-min($small) {
-    max-width: 576px;
-    // padding: $padding-xy;
+    // max-width: 576px;
+    padding: 64px 24px;
   }
   @include media-min($medium) {
-    max-width: 720px;
-    // padding:  $padding-xy;
+    // max-width: 720px;
+    padding:  80px 32px;
   }
   @include media-min($large) {
-    max-width: 992px;
-    // padding: $padding-xy;
+    // max-width: 992px;
+    padding: 100px 56px;
   }
   @include media-min($x_large) {
-    max-width: 1140px;
-    // padding: $padding-xy;
+    max-width: 1200px;
+    padding: 120px 72px;
   }
 }
 
@@ -55,5 +54,5 @@ section {
   display: flex;
   align-items: center;
   padding: 16px;
-  padding: $padding-xy;
+  // padding: $padding-xy;
 }

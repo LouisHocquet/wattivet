@@ -16,25 +16,25 @@
     <a class="btn btn-primary" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Primary with icon</span>
+        <span class="btn-font" >Primary with icon</span>
       </div>
     </a>
     <a class="btn btn-primary icon-off" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Primary no icon</span>
+        <span class="btn-font" >Primary no icon</span>
       </div>
     </a>
     <a class="btn btn-secondary" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Secondary with icon</span>
+        <span class="btn-font" >Secondary with icon</span>
       </div>
     </a>
     <a class="btn btn-secondary icon-off" href="#">
       <div>
         <%= svg_tag "icons/phone.svg" %>
-        <span>Secondary no icon</span>
+        <span class="btn-font" >Secondary no icon</span>
       </div>
     </a>
   </div>
@@ -68,22 +68,22 @@
     <div class="color-item">
       <div class="color-primary-dark"></div>
       <p>Primary Dark</p>
-      <p>#485696</p>
+      <p>#416597</p>
     </div>
     <div class="color-item">
       <div class="color-primary-base"></div>
       <p>Primary Base</p>
-      <p>#5D6CB3</p>
+      <p>#547CB4</p>
     </div>
     <div class="color-item">
       <div class="color-primary-light"></div>
       <p>Primary Light</p>
-      <p>#D9E0FF</p>
+      <p>#D0E3FF</p>
     </div>
     <div class="color-item">
       <div class="color-primary-lightiest"></div>
       <p>Primary Lightiest</p>
-      <p>#F5F7FF</p>
+      <p>#F8FBFF</p>
     </div>
   </div>
   <h3>Secondary</h3>
@@ -127,4 +127,10 @@
       <p>#1EDD88</p>
     </div>
   </div>
+
 </div>
+<div class="container">
+  <h2 class = "text-highlight">Navbar & Logo</h2>
+  <%= render "components/logo" %>
+</div>
+<%= render "components/navbar" %>
