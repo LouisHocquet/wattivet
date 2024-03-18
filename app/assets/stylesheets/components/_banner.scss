@@ -1,0 +1,97 @@
+.banner-mobile {
+  @include media-min($large) {
+    display: none;
+  }
+}
+.banner-desktop {
+  display: none;
+  @include media-min($large) {
+    display: block;
+  }
+}
+.banner-layer {
+  background-color: $primary_base;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-text-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: fit-content;
+
+  display: flex;
+  justify-content: center;
+  @include media-min($large) {
+    justify-content: start;
+  }
+
+  background-image: url("icons/banner_shape_mobile.svg");
+  @media screen and (min-width: $large) {
+      background-image: url("icons/banner_shape_desktop.svg")
+  }
+  background-size: cover;
+
+  & .banner-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: fit-content;
+    @include media-min($large) {
+      align-items: end;
+      & svg {
+        margin-right: 180px;
+      }
+    }
+  }
+
+  & h1 {
+    text-align: center;
+    max-width: 340px;
+    @include media-min($medium) {
+      max-width: 400px;
+    }
+    @include media-min($large){
+      max-width: 620px;
+      text-align: left;
+    }
+  }
+
+  // background-color: $white;
+  & span {
+    color: $primary_base;
+  }
+
+  padding: 24px 16px;
+
+  @include media-min($small) {
+    // max-width: 576px;
+    padding: 32px 24px;
+  }
+  @include media-min($medium) {
+    // max-width: 720px;
+    padding:  32px 32px;
+  }
+  @include media-min($large) {
+    // max-width: 992px;
+    padding: 32px 56px;
+  }
+  @include media-min($x_large) {
+    // max-width: 1200px;
+    padding: 32px 72px;
+  }
+}

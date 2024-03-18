@@ -1,5 +1,10 @@
 .navbar {
-  border: solid;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: $background;
   display: flex;
   gap: 24px;
   align-items: stretch;
@@ -19,11 +24,21 @@
     gap: 32px;
   }
 
+  & .burger-icon {
+    display: flex;
+    align-items: center;
+    & svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
   @include media-min($large) {
     padding: 0 56px;
     gap: 0 64px;
     & .menu {
       display: flex;
+      max-width: 720px;
     }
     & .burger-icon {
       display: none;
@@ -33,6 +48,10 @@
   @include media-min($x-large) {
     padding: 0 72px;
     gap: 0 80px;
+
+    & .menu {
+      max-width: 800px;
+    }
   }
 
   & .menu {
@@ -51,14 +70,5 @@
 
   & .menu > a:hover {
     color: $secondary-base;
-  }
-
-  & .burger-icon {
-    display: flex;
-    align-items: center;
-    & svg {
-      height: 32px;
-      width: 32px;
-    }
   }
 }
