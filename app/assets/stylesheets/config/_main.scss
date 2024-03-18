@@ -17,31 +17,7 @@ hr {
 }
 
 section {
-  padding: $padding-bottom;
-}
-
-.container{
-  width: 100%;
-  margin: auto;
-  box-sizing: border-box;
-  padding: $padding-xy;
-
-  @include media-min($small) {
-    max-width: 576px;
-    // padding: $padding-xy;
-  }
-  @include media-min($medium) {
-    max-width: 720px;
-    // padding:  $padding-xy;
-  }
-  @include media-min($large) {
-    max-width: 992px;
-    // padding: $padding-xy;
-  }
-  @include media-min($x_large) {
-    max-width: 1140px;
-    // padding: $padding-xy;
-  }
+  // padding: $padding-bottom;
 }
 
 // Sticky behavior
@@ -55,5 +31,5 @@ section {
   display: flex;
   align-items: center;
   padding: 16px;
-  padding: $padding-xy;
+  // padding: $padding-xy;
 }
