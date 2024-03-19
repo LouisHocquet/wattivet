@@ -19,13 +19,15 @@
 
 .opening-hours-details {
   display: flex;
-  min-width: 300px;
-  flex-grow: 3;
   flex-direction: column;
   gap: $padding-m;
   margin-bottom: $padding-m;
   & p, .btn {
     margin: 0;
+  }
+  @include media-min($large) {
+    width: 300px;
+    flex-grow: 3;
   }
 }
 
@@ -35,7 +37,7 @@
     display: block;
     border-radius: 8px;
     // box-shadow: $box_shadow;
-    min-width: 300px;
+    width: 300px;
     flex-grow: 2;
     max-height: 60vh;
     object-fit: cover;
