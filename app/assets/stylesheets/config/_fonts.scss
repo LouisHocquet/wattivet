@@ -21,14 +21,8 @@ h1, h2, h3, p, .p2 {
 }
 
 h1, h2, h3 {
-  margin: 12px 0 12px 0;
+  margin: $padding-s 0 $padding-xs 0;
   line-height: 140%;
-  @include media-min($small) {
-    margin: 16px 0 16px 0;
-  }
-  @include media-min($large) {
-    margin: 24px 0 24px 0;
-  }
   font-family: $headers-font;
   font-optical-sizing: auto;
   font-weight: 500;
