@@ -1,13 +1,3 @@
-.section-title {
-  padding-bottom: $padding-m;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  @include media-min($large) {
-    align-items: start;
-  }
-}
-
 .opening-hours-flex {
   display: flex;
   flex-direction: column;
