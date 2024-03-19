@@ -1,0 +1,72 @@
+.section-title {
+  padding-bottom: $padding-m;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-min($large) {
+    align-items: start;
+  }
+}
+
+.opening-hours-flex {
+  display: flex;
+  flex-direction: column;
+  @include media-min($large) {
+    flex-direction: row;
+    gap: $padding-xl;
+  }
+}
+
+.opening-hours-details {
+  display: flex;
+  min-width: 300px;
+  flex-grow: 3;
+  flex-direction: column;
+  gap: $padding-m;
+  margin-bottom: $padding-m;
+  & p, .btn {
+    margin: 0;
+  }
+}
+
+.opening-hours-img {
+  display: none;
+  @include media-min($large) {
+    display: block;
+    border-radius: 8px;
+    // box-shadow: $box_shadow;
+    min-width: 300px;
+    flex-grow: 2;
+    max-height: 60vh;
+    object-fit: cover;
+  }
+}
+
+.card {
+  background-color: $background;
+  border-radius: 8px;
+  padding: $padding-m;
+  // margin: $padding-m 0;
+  box-shadow: $box_shadow;
+  // & p {
+  //   margin: 0;
+  // }
+}
+
+.card .days {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: $padding-s;
+  margin-left: 4px;
+}
+
+.card > div:first-of-type {
+  margin-bottom: $padding-m;
+}
+.card > div >p {
+  display: block;
+  border-bottom: solid 2px $primary-base;
+  width: fit-content;
+  font-weight: 600;
+  margin-bottom: $padding-s;
+}

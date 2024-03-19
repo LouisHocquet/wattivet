@@ -15,3 +15,33 @@ $x_large: 1200px;
     &{ @content; }
   }
 }
+
+$padding-xs: 8px;
+$padding-s: 16px;
+$padding-m: 24px;
+$padding-l: 48px;
+$padding-xl: 72px;
+
+@media screen and (min-width: $medium) {
+  $padding-xs: 12px;
+  $padding-s: 20px;
+  $padding-m: 32px;
+  $padding-l: 52px;
+  $padding-xl: 80px;
+}
+
+@media screen and (min-width: $large) {
+  $padding-xs: 16px;
+  $padding-s: 24px;
+  $padding-m: 36px;
+  $padding-l: 60px;
+  $padding-xl: 100px;
+}
+
+@media screen and (min-width: $x_large) {
+  $padding-xs: 16px;
+  $padding-s: 24px;
+  $padding-m: 48px;
+  $padding-l: 72px;
+  $padding-xl: 120px;
+}
