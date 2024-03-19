@@ -83,15 +83,15 @@
     color: $primary_base;
   }
 
-  padding: 24px 16px 12vh 16px;
+  padding: 24px 16px 14vh 16px;
 
   @include media-min($small) {
     // max-width: 576px;
-    padding: 32px 24px 12vh 24px;
+    padding: 32px 24px 14vh 24px;
   }
   @include media-min($medium) {
     // max-width: 720px;
-    padding:  32px 32px 12vh 32px;
+    padding:  32px 32px 14vh 32px;
   }
   @include media-min($large) {
     // max-width: 992px;
