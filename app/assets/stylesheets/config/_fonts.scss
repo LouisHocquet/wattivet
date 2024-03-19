@@ -22,6 +22,7 @@ h1, h2, h3, p, .p2 {
 
 h1, h2, h3 {
   margin: 12px 0 12px 0;
+  line-height: 140%;
   @include media-min($small) {
     margin: 16px 0 16px 0;
   }
@@ -34,13 +35,6 @@ h1, h2, h3 {
   font-style: normal;
   font-variation-settings:
     "wdth" 100;
-}
-
-p {
-  margin: 8px 0 0 0;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
 }
 
 h1 {
@@ -56,8 +50,9 @@ h1 {
 
 h2 {
   font-size: 24px;
+  color: $primary_base;
 
-  @include media-min($medium) {
+  @include media-min($small) {
     font-size: 28px;
   }
   @include media-min($large) {
@@ -69,7 +64,7 @@ h3 {
   font-size: 20px;
   line-height: normal;
 
-  @include media-min($medium) {
+  @include media-min($small) {
     font-size: 20px;
   }
   @include media-min($large) {
@@ -78,10 +73,12 @@ h3 {
 }
 
 p {
+  margin: 8px 0 8px 0;
   font-family: $body-font;
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
+  line-height: 140%;
 
   @include media-min($medium) {
     font-size: 18px;
@@ -93,6 +90,7 @@ p {
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
+  line-height: 140%;
 
   @include media-min($medium) {
     font-size: 14px;
