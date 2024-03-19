@@ -19,22 +19,16 @@ hr {
 .section {
   padding-top: $padding-xl;
   padding-bottom: $padding-xl;
-  // @include media-min($small) {
-  //   padding-top: 80px;
-  //   padding-bottom: 80px;
-  // }
-  // @include media-min($medium) {
-  //   padding-top: 88px;
-  //   padding-bottom: 88px;
-  // }
-  // @include media-min($large) {
-  //   padding-top: 100px;
-  //   padding-bottom: 100px;
-  // }
-  // @include media-min($x_large) {
-  //   padding-top: 120px;
-  //   padding-bottom: 120px;
-  // }
+}
+
+.section-title {
+  padding-bottom: $padding-m;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include media-min($large) {
+    align-items: start;
+  }
 }
 
 .background-primary-lightiest {
