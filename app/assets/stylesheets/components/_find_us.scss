@@ -12,7 +12,7 @@
 
   @include media-min($large) {
     flex-direction: row;
-    gap: $padding-xl;
+    gap: $padding-l;
   }
 }
 .card-find-us {
@@ -26,15 +26,36 @@
 }
 
 .find-us-map {
+  display: flex;
+  flex-direction: column;
   flex-grow: 3;
-  border-radius: 8px;
-  // box-shadow: $box_shadow;
-  height: 60vh;
-  background-color: $gray;
-  & > p {
-    color: $white;
-  }
+  // height: 40vh;
+  gap: $padding-m;
   @include media-min($large) {
     width: 300px;
+    // height: 60vh;
+  }
+  & > img {
+    border-radius: 8px;
+    box-shadow: $box_shadow;
+    object-fit: cover;
+    flex-grow: 1;
+  }
+}
+
+.find-us-google-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-bottom: solid 1px $secondary-base;
+  width: fit-content;
+  & p, path {
+    color: $secondary-base;
+    fill: $secondary-base;
+    margin: 0;
+  }
+  & svg {
+    width: 20px;
+    height: 20px;
   }
 }
