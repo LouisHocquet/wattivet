@@ -3,7 +3,7 @@
   flex-direction: column;
   @include media-min($large) {
     flex-direction: row;
-    gap: $padding-xl;
+    gap: $padding-l;
   }
 }
 
@@ -26,7 +26,7 @@
   @include media-min($large) {
     display: block;
     border-radius: 8px;
-    // box-shadow: $box_shadow;
+    box-shadow: $box_shadow;
     width: 300px;
     flex-grow: 2;
     max-height: 60vh;

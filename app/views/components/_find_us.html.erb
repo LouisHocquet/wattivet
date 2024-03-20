@@ -43,7 +43,12 @@
         </div>
       </div>
       <div class="find-us-map">
-        <p>Placeholder map</p>
+        <%= cl_image_tag("Wattivet/map") %>
+        <a href="https://maps.app.goo.gl/at94uJ8Pg5tFHktH9"
+          class="find-us-google-link" target="_blank">
+          <p>Ouvrir dans Google Maps</p>
+          <%= svg_tag "icons/open_link_icon.svg" %>
+        </a>
       </div>
     </div>
   </div>
