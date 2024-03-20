@@ -51,6 +51,9 @@
   margin-bottom: $padding-s;
   margin-left: 4px;
 }
+.card .days:last-of-type {
+  margin-bottom: 0;
+}
 
 .card > div:first-of-type {
   margin-bottom: $padding-m;
