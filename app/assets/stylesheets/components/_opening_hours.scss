@@ -34,17 +34,6 @@
   }
 }
 
-.card {
-  background-color: $background;
-  border-radius: 8px;
-  padding: $padding-m;
-  // margin: $padding-m 0;
-  box-shadow: $box_shadow;
-  // & p {
-  //   margin: 0;
-  // }
-}
-
 .card .days {
   display: flex;
   justify-content: space-between;
@@ -53,15 +42,4 @@
 }
 .card .days:last-of-type {
   margin-bottom: 0;
-}
-
-.card > div:first-of-type {
-  margin-bottom: $padding-m;
-}
-.card > div >p {
-  display: block;
-  border-bottom: solid 2px $primary-base;
-  width: fit-content;
-  font-weight: 600;
-  margin-bottom: $padding-s;
 }
