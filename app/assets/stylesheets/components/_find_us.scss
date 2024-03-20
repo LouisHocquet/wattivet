@@ -1,0 +1,40 @@
+.card .find-us-details {
+  margin-bottom: $padding-s;
+  margin-left: 4px;
+}
+.card .find-us-details:last-of-type {
+  margin-bottom: 0;
+}
+.find-us-flex {
+  display: flex;
+  flex-direction: column;
+  gap: $padding-m;
+
+  @include media-min($large) {
+    flex-direction: row;
+    gap: $padding-xl;
+  }
+}
+.card-find-us {
+  & p {
+    margin: 0;
+  }
+  @include media-min($large) {
+    width: 300px;
+    flex-grow: 2;
+  }
+}
+
+.find-us-map {
+  flex-grow: 3;
+  border-radius: 8px;
+  // box-shadow: $box_shadow;
+  height: 60vh;
+  background-color: $gray;
+  & > p {
+    color: $white;
+  }
+  @include media-min($large) {
+    width: 300px;
+  }
+}
