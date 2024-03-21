@@ -1,19 +1,18 @@
 .btn {
   text-decoration: none;
-  padding: 0 24px;
-  margin: 8px auto;
+  padding: 0 $padding_s;
+  margin: auto 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 50px;
   width: -webkit-fill-available;
   border-radius: $border-radius;
+  color: $white;
   @include media-min($medium){
-    margin: 16px 8px;
     width: fit-content;
   }
   @include media-min($large){
-    margin: 24px 8px;
   }
   div {
     display: flex;
@@ -30,7 +29,7 @@
   }
   span {
     margin: 0;
-    padding: 0 0 0 4px;
+    padding: 0 0 0 8px;
   }
 
 }
@@ -53,6 +52,7 @@
 .btn-primary, .btn-secondary {
   transition: 0.3s;
   &:hover {
+    cursor: pointer;
     background: $secondary_dark;
     color: $white;
     path {
@@ -70,4 +70,21 @@
 .btns-list {
   display: flex;
   flex-wrap: wrap;
+}
+.btn-call-mobile {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: fit-content;
+  border-radius: 30px;
+  height: 56px;
+  width: 56px;
+  padding: 0;
+  & svg {
+    height: 28px;
+    width: 28px;
+  }
+  @include media-min($medium) {
+    display: none;
+  }
 }
