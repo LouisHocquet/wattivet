@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="section-title">
+    <h2>Nos activités</h2>
+    <%= svg_tag "icons/underline.svg" %>
+  </div>
+
+  <div class="activities-flex">
+    <div class="activity-pills">
+      <div class="activity-pill activity-active">
+        <p class="p2">Consultation</p>
+      </div>
+      <div class="activity-pill">
+        <p class="p2">Imagerie médicale</p>
+      </div>
+      <div class="activity-pill">
+        <p class="p2">Analyse sanguine</p>
+      </div>
+      <div class="activity-pill">
+        <p class="p2">Chirurgie</p>
+      </div>
+      <div class="activity-pill">
+        <p class="p2">Hospitalisation</p>
+      </div>
+      <div class="activity-pill">
+        <p class="p2">Alimentation spécialisée</p>
+      </div>
+    </div>
+    <div class="activity-display">
+      <%= cl_image_tag("wattivet/consultation_schcoubi_2",
+      class: "activity-picture") %>
+      <div class="activity-description">
+        <h3>Consultation</h3>
+        <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor
+          sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum
+          dolor sin amet -> Texte à valider ensemble :)</p>
+      </div>
+    </div>
+  </div>
+</div>

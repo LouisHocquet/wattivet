@@ -1,73 +1,71 @@
-<div id="section-opening-hours" class="section background-primary-lightiest">
-  <div class="container">
-    <div class="section-title">
-      <h2>Prise de RDV</h2>
-      <%= svg_tag "icons/underline.svg" %>
-    </div>
-    <div class="opening-hours-flex">
-      <div class="opening-hours-details">
-        <p>
-            Bonjour 👋 </br>
-            La clinique Wattivet vous accueille du lundi au samedi. Afin de vous assurer un service optimal,
-            <strong>nous ne consultons que sur rendez-vous</strong>.
-        </p>
+<div class="container">
+  <div class="section-title">
+    <h2>Prise de RDV</h2>
+    <%= svg_tag "icons/underline.svg" %>
+  </div>
+  <div class="opening-hours-flex">
+    <div class="opening-hours-details">
+      <p>
+          Bonjour 👋 </br>
+          La clinique Wattivet vous accueille du lundi au samedi. Afin de vous assurer un service optimal,
+          <strong>nous ne consultons que sur rendez-vous</strong>.
+      </p>
 
-        <div class="card card-opening-hours">
-          <div>
-            <p>Consultations</p>
-            <div class="days">
-              <p>Du lundi au vendredi</p>
-              <div class="hours">
-                <p>10h à 12h</p>
-                <p>14h à 19h</p>
-              </div>
-            </div>
-            <div class="days">
-              <p>Samedi</p>
-              <div class="hours">
-                <p>9h à 12h30</p>
-              </div>
-            </div>
-            <div class="days">
-              <p>Dimanche</p>
-              <div class="hours">
-                <p>Fermé</p>
-              </div>
+      <div class="card card-opening-hours">
+        <div>
+          <p>Consultations</p>
+          <div class="days">
+            <p>Du lundi au vendredi</p>
+            <div class="hours">
+              <p>10h à 12h</p>
+              <p>14h à 19h</p>
             </div>
           </div>
-          <div>
-            <p>Permanence accueil</p>
-            <div class="days">
-              <p>Du lundi au vendredi</p>
-              <div class="hours">
-                <p>13h à 14h</p>
-              </div>
+          <div class="days">
+            <p>Samedi</p>
+            <div class="hours">
+              <p>9h à 12h30</p>
+            </div>
+          </div>
+          <div class="days">
+            <p>Dimanche</p>
+            <div class="hours">
+              <p>Fermé</p>
             </div>
           </div>
         </div>
-
-        <p>
-          Vous pouvez prendre rendez-vous par téléphone au
-          <strong>03 20 96 09 60 </strong>
-          ou sur place lors de nos permanences accueil.
-        </p>
-
-        <a class="btn btn-primary">
-          <div>
-            <%= svg_tag "icons/phone.svg" %>
-            <span class="btn-font" >Prendre rendez-vous</span>
+        <div>
+          <p>Permanence accueil</p>
+          <div class="days">
+            <p>Du lundi au vendredi</p>
+            <div class="hours">
+              <p>13h à 14h</p>
+            </div>
           </div>
-        </a>
-
+        </div>
       </div>
-      <%= cl_image_tag("wattivet/consultation_joey_3-min",
-      class: "opening-hours-img") %>
-    </div>
 
-    <p>
-      Si vous avez une urgence et que la clinique est fermée,
-      vous pouvez joindre Nordvet au 03 20 51 00 66
-      ou Vetoadom au 03 59 61 33 33.
-    </p>
+      <p>
+        Vous pouvez prendre rendez-vous par téléphone au
+        <strong>03 20 96 09 60 </strong>
+        ou sur place lors de nos permanences accueil.
+      </p>
+
+      <a class="btn btn-primary">
+        <div>
+          <%= svg_tag "icons/phone.svg" %>
+          <span class="btn-font" >Prendre rendez-vous</span>
+        </div>
+      </a>
+
+    </div>
+    <%= cl_image_tag("wattivet/consultation_joey_3-min",
+    class: "opening-hours-img") %>
   </div>
+
+  <p>
+    Si vous avez une urgence et que la clinique est fermée,
+    vous pouvez joindre Nordvet au 03 20 51 00 66
+    ou Vetoadom au 03 59 61 33 33.
+  </p>
 </div>
