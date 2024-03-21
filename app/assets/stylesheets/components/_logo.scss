@@ -6,6 +6,7 @@
 
 .logo p {
   color: $primary_base;
+  margin: 0;
   margin-left: 8px;
 
   @include media-min($large) {

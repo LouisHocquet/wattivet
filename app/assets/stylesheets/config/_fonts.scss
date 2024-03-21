@@ -14,6 +14,10 @@ h1, h2, h3, p, .p2 {
   color: $gray;
 }
 
+.color-primary-base {
+  color: $primary-base;
+}
+
 .roboto-light {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
