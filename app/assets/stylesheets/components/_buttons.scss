@@ -52,6 +52,16 @@
 .btn-primary, .btn-secondary {
   transition: 0.3s;
   &:hover {
+    @include media-min($large) {
+      cursor: pointer;
+      background: $secondary_dark;
+      color: $white;
+      path {
+        fill: $white;
+      }
+    }
+  }
+  &:active {
     cursor: pointer;
     background: $secondary_dark;
     color: $white;
