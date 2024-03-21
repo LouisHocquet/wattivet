@@ -40,6 +40,10 @@
     box-shadow: $box_shadow;
     object-fit: cover;
     flex-grow: 1;
+    height: 36vh;
+    @include media-min($medium) {
+      height: 40vh;
+    }
   }
 }
 

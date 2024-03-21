@@ -1,0 +1,76 @@
+.activity-pills {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 8px;
+  @include media-min($large) {
+    gap : 16px;
+  }
+}
+
+.activity-pill {
+  display: flex;
+  border: solid 1px $secondary-base;
+  box-shadow: $box_shadow;
+  padding: $padding_xs;
+  background-color: $background;
+  border-radius: 8px;
+  cursor: pointer;
+  flex-grow: 1;
+  justify-content: center;
+  & > p{
+    margin: 0;
+    font-weight: 500;
+  }
+  @include media-min($large) {
+    padding: $padding_xs $padding-s;
+  }
+}
+
+.activity-active, .activity-pill:hover {
+  background-color: $secondary-base;
+  & p {
+    color: $white;
+  }
+}
+
+.activities-flex {
+  display: flex;
+  flex-direction: column;
+  gap: $padding-s;
+  @include media-min($large) {
+    gap: $padding-m;
+  }
+}
+
+.activity-display {
+  display: flex;
+  flex-direction: column;
+  // gap: $padding_s;
+  @include media-min($medium){
+    flex-direction: row;
+    gap: $padding_l;
+  }
+}
+
+.activity-picture {
+  box-shadow: $box_shadow;
+  flex-grow: 3;
+  border-radius: 8px;
+  object-fit: cover;
+  height: 36vh;
+  @include media-min($medium) {
+    height: 40vh;
+    width: 300px;
+  }
+  @include media-min($large) {
+    height: 60vh;
+  }
+}
+
+.activity-description {
+  flex-grow: 1;
+  @include media-min($medium) {
+    width: 300px;
+  }
+}
