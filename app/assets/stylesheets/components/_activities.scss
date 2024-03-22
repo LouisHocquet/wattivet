@@ -59,6 +59,7 @@
   flex-grow: 3;
   border-radius: 8px;
   object-fit: cover;
+  min-height: 320px;
   height: 36vh;
   @include media-min($medium) {
     height: 40vh;
