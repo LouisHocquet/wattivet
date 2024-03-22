@@ -4,30 +4,53 @@
     <%= svg_tag "icons/underline.svg" %>
   </div>
 
-  <div class="activities-flex">
+  <div class="activities-flex" data-controller="activities">
     <div class="activity-pills">
-      <div class="activity-pill activity-active">
+      <div class="activity-pill activity-active"
+        data-action="click->activities#toggle"
+        data-activity="consultation">
         <p class="p2">Consultation</p>
       </div>
-      <div class="activity-pill">
+      <div class="activity-pill"
+        data-action="click->activities#toggle"
+        data-activity="image">
         <p class="p2">Imagerie médicale</p>
       </div>
-      <div class="activity-pill">
+      <div class="activity-pill"
+        data-action="click->activities#toggle"
+        data-activity="analysis">
         <p class="p2">Analyse sanguine</p>
       </div>
-      <div class="activity-pill">
+      <div class="activity-pill"
+        data-action="click->activities#toggle"
+        data-activity="surgery">
         <p class="p2">Chirurgie</p>
       </div>
-      <div class="activity-pill">
+      <div class="activity-pill"
+        data-action="click->activities#toggle"
+        data-activity="hospital">
         <p class="p2">Hospitalisation</p>
       </div>
-      <div class="activity-pill">
+      <div class="activity-pill"
+        data-action="click->activities#toggle"
+        data-activity="food">
         <p class="p2">Alimentation spécialisée</p>
       </div>
     </div>
-    <div class="activity-display">
+    <div class="activity-display"
+      data-activities-target="activityElement">
       <%= cl_image_tag("wattivet/consultation_schcoubi_2",
-      class: "activity-picture") %>
+      id: "img-consultation", class: "activity-picture img-active") %>
+      <%= cl_image_tag("wattivet/radio_machine_2-min",
+      id: "img-image", class: "activity-picture") %>
+      <%= cl_image_tag("wattivet/blood_analysis",
+      id: "img-analysis", class: "activity-picture") %>
+      <%= cl_image_tag("wattivet/surgery_landscape",
+      id: "img-surgery", class: "activity-picture") %>
+      <%= cl_image_tag("wattivet/hostpital_stay",
+      id: "img-hospital", class: "activity-picture") %>
+      <%= cl_image_tag("wattivet/pet_food",
+      id: "img-food", class: "activity-picture") %>
       <div class="activity-description">
         <h3>Consultation</h3>
         <p>Lorem ipsum dolor sin amet Lorem ipsum dolor sin amet Lorem ipsum dolor
