@@ -54,6 +54,7 @@
 }
 
 .activity-picture {
+  display: none;
   box-shadow: $box_shadow;
   flex-grow: 3;
   border-radius: 8px;
@@ -66,6 +67,10 @@
   @include media-min($large) {
     height: 60vh;
   }
+}
+
+.img-active {
+  display:block;
 }
 
 .activity-description {

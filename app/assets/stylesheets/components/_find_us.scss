@@ -51,12 +51,13 @@
   display: flex;
   align-items: center;
   gap: 4px;
-  border-bottom: solid 1px $secondary-base;
+  border-bottom: solid 2px $secondary-base;
   width: fit-content;
   & p, path {
     color: $secondary-base;
     fill: $secondary-base;
     margin: 0;
+    font-weight: 500;
   }
   & svg {
     width: 20px;
