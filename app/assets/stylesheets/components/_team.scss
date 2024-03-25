@@ -30,7 +30,7 @@
     justify-content: center;
   }
   @include media-min($large) {
-    justify-content: space-between;
+    justify-content: center;
   }
 
 }
