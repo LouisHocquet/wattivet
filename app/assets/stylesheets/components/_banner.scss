@@ -1,4 +1,6 @@
 .banner-mobile {
+  display: flex;
+  flex-direction: column;
   @include media-min($large) {
     display: none;
   }
@@ -34,11 +36,33 @@
 }
 
 .banner-text-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: fit-content;
+  opacity: 0.8;
+  padding: 0 16px 12vh 16px;
+
+  @include media-min($small) {
+    // max-width: 576px;
+    padding: 0 24px 10vh 24px;
+  }
+  @include media-min($medium) {
+    // max-width: 720px;
+    padding:  0 32px 10vh 32px;
+  }
+  @include media-min($large) {
+    // max-width: 992px;
+    padding: 32px 56px;
+  }
+  @include media-min($x_large) {
+    // max-width: 1200px;
+    padding: 32px 72px;
+  }
+
+  @include media-min($large) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+  }
 
   display: flex;
   justify-content: center;
@@ -46,9 +70,11 @@
     justify-content: start;
   }
 
-  background-image: url("icons/banner_shape_mobile.svg");
+  // background-image: url("icons/banner_shape_mobile.svg");
+  background-color: $white;
   @media screen and (min-width: $large) {
-      background-image: url("icons/banner_shape_desktop.svg")
+    background-color: unset;
+    background-image: url("icons/banner_shape_desktop.svg")
   }
   background-size: cover;
 
@@ -83,22 +109,7 @@
     color: $primary_base;
   }
 
-  padding: 24px 16px 14vh 16px;
 
-  @include media-min($small) {
-    // max-width: 576px;
-    padding: 32px 24px 14vh 24px;
-  }
-  @include media-min($medium) {
-    // max-width: 720px;
-    padding:  32px 32px 14vh 32px;
-  }
-  @include media-min($large) {
-    // max-width: 992px;
-    padding: 32px 56px;
-  }
-  @include media-min($x_large) {
-    // max-width: 1200px;
-    padding: 32px 72px;
-  }
+
+
 }

@@ -1,0 +1,123 @@
+.banner-carousel {
+  height: 64%;
+  @include media-min($small) {
+    height: 72%;
+  }
+  @include media-min($medium) {
+    height: 80%;
+  }
+  position: relative;
+}
+
+.carousel-picture {
+  height: 100%;
+  background-size: cover;
+  background-position: top;
+}
+
+.carousel-mobile-shape {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  @include media-min($small) {
+    bottom: -24px;
+  }
+  @include media-min($medium) {
+    bottom: -44px;
+  }
+  & > svg {
+    width: 100%;
+    height: 100%;
+  }
+  // background-image: url("icons/banner_shape_mobile.svg");
+}
+
+.carousel-back, .carousel-forward {
+  // position: absolute;
+  // height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // width: 72px;
+  & svg {
+    width: 32px;
+    height: 32px;
+    padding: $padding-m;
+    @include media-min($medium) {
+      height: 40px;
+      width: 40px;
+    }
+    // @include media-min($large) {
+    //   height: 20px;
+    //   width: 20px;
+    // }
+  }
+  & path {
+    fill: $secondary-base;
+  }
+}
+
+.carousel-back {
+  left: 0;
+  // padding-left: $padding-s;
+  // background-image: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0));
+}
+
+.carousel-forward {
+ right: 0;
+//  padding-right: $padding-s;
+//  background-image: linear-gradient(to left, rgba(0,0,0, 0.5), rgba(0,0,0, 0));
+}
+
+.carousel-stepper {
+  padding: $padding-xl 0 32px 0;
+  width: 100%;
+  // height: 120px;
+  position: absolute;
+  bottom: 0;
+  // bottom: $padding-l;
+  @include media-min($medium) {
+    bottom: 0;
+    padding-bottom: 80px;
+  }
+  left:0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(to top, rgba(0,0,0, 1), rgba(0,0,0, 0));
+}
+
+.carousel-steps {
+  left:0;
+  display: flex;
+  justify-content: center;
+  gap: $padding-s;
+  & > .stepper-step {
+    box-sizing: border-box;
+    height: 12px;
+    width: 12px;
+    border-radius: 12px;
+    border: solid 1px $secondary-base;
+    background-color: $white;
+    box-shadow: $box-shadow;
+    @include media-min($medium) {
+      height: 16px;
+      width: 16px;
+    }
+    @include media-min($large) {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  & > .active-step {
+    background-color: $secondary-base;
+    width: 36px;
+    @include media-min($medium) {
+    width: 40px;
+    }
+    @include media-min($large) {
+    width: 48px;
+    }
+  }
+}
