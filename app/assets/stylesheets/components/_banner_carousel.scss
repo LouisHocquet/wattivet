@@ -76,22 +76,22 @@
     transition:
       background-color 3s,
       border-radius 0;
-    @include media-min($large) {
-      cursor: pointer;
-      background-color: $secondary-base;
-      border-radius: 50px;
-    }
+    // @include media-min($large) {
+    cursor: pointer;
+    background-color: $secondary-base;
+    border-radius: 50px;
+    // }
     & path {
       fill: $white;
     }
   }
-  &:active {
-    transition:
-      background-color 300ms,
-      border-radius 0;
-    background-color: $secondary-dark;
-    border-radius: 50px;
-  }
+  // &:active {
+  //   transition:
+  //     background-color 300ms,
+  //     border-radius 0;
+  //   background-color: $secondary-dark;
+  //   border-radius: 50px;
+  // }
 }
 
 .carousel-back {
