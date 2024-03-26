@@ -1,18 +1,29 @@
 .banner-carousel {
   height: 64%;
+  position: relative;
   @include media-min($small) {
     height: 72%;
   }
   @include media-min($medium) {
     height: 80%;
   }
-  position: relative;
+  @include media-min($large) {
+    position: absolute;
+    height: 560px;
+    width: 400px;
+    right: 56px;
+    bottom: 140px;
+  }
 }
 
 .carousel-picture {
   height: 100%;
   background-size: cover;
   background-position: top;
+  @include media-min ($large) {
+    border-radius: 8px;
+    box-shadow: $box-shadow;
+  }
 }
 
 .carousel-mobile-shape {
@@ -30,16 +41,15 @@
     width: 100%;
     height: 100%;
   }
-  // background-image: url("icons/banner_shape_mobile.svg");
+  @include media-min($large) {
+    display: none;
+  }
 }
 
 .carousel-back, .carousel-forward {
-  // position: absolute;
-  // height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  // width: 72px;
   & svg {
     width: 32px;
     height: 32px;
@@ -48,10 +58,6 @@
       height: 40px;
       width: 40px;
     }
-    // @include media-min($large) {
-    //   height: 20px;
-    //   width: 20px;
-    // }
   }
   & path {
     fill: $secondary-base;
@@ -60,32 +66,32 @@
 
 .carousel-back {
   left: 0;
-  // padding-left: $padding-s;
-  // background-image: linear-gradient(to right, rgba(0,0,0, 0.5), rgba(0,0,0, 0));
 }
 
 .carousel-forward {
  right: 0;
-//  padding-right: $padding-s;
-//  background-image: linear-gradient(to left, rgba(0,0,0, 0.5), rgba(0,0,0, 0));
 }
 
 .carousel-stepper {
-  padding: $padding-xl 0 32px 0;
+  padding: $padding-xl 0 12px 0;
   width: 100%;
-  // height: 120px;
-  position: absolute;
-  bottom: 0;
-  // bottom: $padding-l;
-  @include media-min($medium) {
-    bottom: 0;
-    padding-bottom: 80px;
-  }
   left:0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-image: linear-gradient(to top, rgba(0,0,0, 1), rgba(0,0,0, 0));
+  position: absolute;
+  bottom: 0;
+  @include media-min($medium) {
+    bottom: 0;
+    padding-bottom: 56px;
+  }
+  @include media-min($large) {
+    border-radius: 8px;
+    padding: 0;
+    position: relative;
+    background-image: unset;
+  }
 }
 
 .carousel-steps {
@@ -105,19 +111,12 @@
       height: 16px;
       width: 16px;
     }
-    @include media-min($large) {
-      height: 20px;
-      width: 20px;
-    }
   }
   & > .active-step {
     background-color: $secondary-base;
     width: 36px;
     @include media-min($medium) {
     width: 40px;
-    }
-    @include media-min($large) {
-    width: 48px;
     }
   }
 }
