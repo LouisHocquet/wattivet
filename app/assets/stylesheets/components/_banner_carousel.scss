@@ -16,13 +16,22 @@
   }
 }
 
-.carousel-picture {
+.carousel-picture-container {
   height: 100%;
-  background-size: cover;
-  background-position: top;
-  @include media-min ($large) {
-    border-radius: 8px;
-    box-shadow: $box-shadow;
+  & > .carousel-picture {
+    transition-duration: 300ms;
+    display: none;
+    height: 100%;
+    background-size: cover;
+    background-position: top;
+    @include media-min ($large) {
+      border-radius: 8px;
+      box-shadow: $box-shadow;
+    }
+  }
+  & > .active-picture {
+    display: block;
+    transition-duration: 300ms;
   }
 }
 
@@ -54,6 +63,7 @@
     width: 32px;
     height: 32px;
     padding: $padding-m;
+    border-radius: 50px;
     @include media-min($medium) {
       height: 40px;
       width: 40px;
@@ -61,6 +71,26 @@
   }
   & path {
     fill: $secondary-base;
+  }
+  &:hover {
+    transition:
+      background-color 3s,
+      border-radius 0;
+    @include media-min($large) {
+      cursor: pointer;
+      background-color: $secondary-base;
+      border-radius: 50px;
+    }
+    & path {
+      fill: $white;
+    }
+  }
+  &:active {
+    transition:
+      background-color 300ms,
+      border-radius 0;
+    background-color: $secondary-dark;
+    border-radius: 50px;
   }
 }
 
@@ -100,6 +130,7 @@
   justify-content: center;
   gap: $padding-s;
   & > .stepper-step {
+    transition-duration: 300ms;
     box-sizing: border-box;
     height: 12px;
     width: 12px;
@@ -115,6 +146,7 @@
   & > .active-step {
     background-color: $secondary-base;
     width: 36px;
+    transition-duration: 300ms;
     @include media-min($medium) {
     width: 40px;
     }
