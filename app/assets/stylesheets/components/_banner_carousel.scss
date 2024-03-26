@@ -73,18 +73,21 @@
     fill: $secondary-base;
   }
   &:hover {
-    transition:
-      background-color 3s,
-      border-radius 0;
-    // @include media-min($large) {
     cursor: pointer;
-    background-color: $secondary-base;
-    border-radius: 50px;
-    // }
-    & path {
-      fill: $white;
-    }
   }
+  // &:hover {
+  //   transition:
+  //     background-color 3s,
+  //     border-radius 0;
+  //   @include media-min($large) {
+  //   cursor: pointer;
+  //   background-color: $secondary-base;
+  //   border-radius: 50px;
+  //   }
+  //   & path {
+  //     fill: $white;
+  //   }
+  // }
   // &:active {
   //   transition:
   //     background-color 300ms,
