@@ -14,7 +14,6 @@ export default class extends Controller {
     type : String
   }
   connect() {
-    console.log("hello from activities_controller.js");
   }
   toggle(event) {
     const activity = event.currentTarget.dataset.activity;

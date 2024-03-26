@@ -1,0 +1,37 @@
+<div class="banner-carousel" data-controller="carousel">
+  <div class="carousel-picture-container" data-carousel-target="pictureContainer">
+    <div class="carousel-picture active-picture",
+      style="background-image: url(<%= cl_image_path("wattivet/consultation_briard-min") %>)">
+    </div>
+    <div class="carousel-picture",
+      style="background-image: url(<%= cl_image_path("wattivet/schcoobi") %>)">
+    </div>
+    <div class="carousel-picture",
+      style="background-image: url(<%= cl_image_path("wattivet/home-min") %>)">
+    </div>
+    <div class="carousel-picture",
+      style="background-image: url(<%= cl_image_path("wattivet/chewbacca_marilou") %>)">
+    </div>
+    <div class="carousel-picture",
+      style="background-image: url(<%= cl_image_path("wattivet/door_consultation-min") %>)">
+    </div>
+  </div>
+  <div class="carousel-stepper">
+    <div class="carousel-back" data-action="click->carousel#back">
+      <%= svg_tag "icons/arrow_back.svg" %>
+    </div>
+    <div class="carousel-steps" data-carousel-target="stepperContainer">
+      <div class="stepper-step active-step"></div>
+      <div class="stepper-step"></div>
+      <div class="stepper-step"></div>
+      <div class="stepper-step"></div>
+      <div class="stepper-step"></div>
+    </div>
+    <div class="carousel-forward" data-action="click->carousel#forward">
+      <%= svg_tag "icons/arrow_forward.svg" %>
+    </div>
+  </div>
+  <div class="carousel-mobile-shape">
+    <%= svg_tag "icons/banner_shape_mobile.svg" %>
+  </div>
+</div>
