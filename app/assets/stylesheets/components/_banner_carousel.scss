@@ -19,7 +19,7 @@
 .carousel-picture-container {
   height: 100%;
   & > .carousel-picture {
-    transition-duration: 300ms;
+    transition: all 0.5s ease 0s, transform 1s ease 0s;
     display: none;
     height: 100%;
     background-size: cover;
@@ -31,7 +31,7 @@
   }
   & > .active-picture {
     display: block;
-    transition-duration: 300ms;
+    transition: all 0.5s ease 0s, transform 1s ease 0s;
   }
 }
 
