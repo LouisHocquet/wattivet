@@ -1,16 +1,14 @@
-<div class="navbar-menu-container" data-controller="menu">
-  <div class="navbar">
-    <%= render "components/logo" %>
-    <div class="menu-container-desktop">
-      <%= render"components/menu_desktop" %>
-    </div>
-    <div class="burger-icon" data-action="click->menu#toggle" >
-      <%= svg_tag "icons/burger.svg" %>
-    </div>
+<div class="navbar">
+  <%= render "components/logo" %>
+  <div class="menu-container-desktop">
+    <%= render"components/menu_desktop" %>
   </div>
-  <div class="menu-container-mobile container" data-menu-target="mobileMenuContainer" >
-    <%# <div class="container"> %>
-      <%= render "components/menu_mobile" %>
-    <%# </div> %>
+  <div class="burger-icon" data-action="click->menu#toggle" >
+    <%= svg_tag "icons/burger.svg" %>
   </div>
+</div>
+<div class="menu-container-mobile container" data-menu-target="mobileMenuContainer" >
+  <%# <div class="container"> %>
+    <%= render "components/menu_mobile" %>
+  <%# </div> %>
 </div>
