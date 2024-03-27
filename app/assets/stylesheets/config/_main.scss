@@ -1,6 +1,14 @@
 body, html {
   background-color: $background;
-  // scroll-behavior: smooth;
+}
+
+body {
+  overflow: unset;
+}
+
+.disable-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
 
 hr {
@@ -92,9 +100,4 @@ hr {
   width: fit-content;
   font-weight: 600;
   margin-bottom: $padding-s;
-}
-
-.disable-scrolling {
-  height: 100%;
-  overflow: hidden;
 }
