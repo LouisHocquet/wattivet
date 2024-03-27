@@ -1,0 +1,13 @@
+  <div class="menu">
+    <%= link_to("Accueil", { anchor: "section-home" }, class: "btn-font") %>
+
+    <%= link_to("Nos activités", { anchor: "section-activities" }, class: "btn-font") %>
+    <%= link_to("Nous trouver", { anchor: "section-find-us" }, class: "btn-font") %>
+    <%= link_to("L'équipe", { anchor: "section-team" }, class: "btn-font")%>
+    <%= link_to({ anchor: "section-opening-hours" }, class: "btn btn-primary") do %>
+      <div>
+        <%= svg_tag "icons/phone.svg" %>
+        <span class="btn-font">Prendre RDV</span>
+      </div>
+    <% end %>
+  </div>

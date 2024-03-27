@@ -1,18 +1,15 @@
 .navbar {
+  z-index: 10;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
   background: $background;
   display: flex;
   gap: 24px;
   align-items: stretch;
   justify-content: space-between;
   box-shadow: $box_shadow;
-  .menu {
-    display: none;
-  }
 
   padding: 0 16px;
 
@@ -37,10 +34,6 @@
   @include media-min($large) {
     padding: 0 56px;
     gap: 0 64px;
-    & .menu {
-      display: flex;
-      max-width: 720px;
-    }
     & .burger-icon {
       display: none;
     }
@@ -49,27 +42,5 @@
   @include media-min($x-large) {
     padding: 0 72px;
     gap: 0 80px;
-
-    & .menu {
-      max-width: 800px;
-    }
-  }
-
-  & .menu {
-    flex-grow: 1;
-
-    justify-content: space-between;
-    align-items: stretch;
-  }
-
-  & .menu > .btn-font {
-    color: $gray;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-  }
-
-  & .menu > .btn-font:hover {
-    color: $secondary-base;
   }
 }
