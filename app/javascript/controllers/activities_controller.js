@@ -35,31 +35,31 @@ export default class extends Controller {
         break;
       case "image":
         activityTitle.innerText = "Imagerie médicale";
-        activityDescription.innerText = "Texte imagerie médicale";
+        // activityDescription.innerText = "Texte imagerie médicale";
         imgActive.classList.toggle("img-active");
         imgImage.classList.toggle("img-active");
         break;
       case "analysis":
         activityTitle.innerText = "Analyse sanguine";
-        activityDescription.innerText = "Texte analyse Sanguine";
+        // activityDescription.innerText = "Texte analyse Sanguine";
         imgActive.classList.toggle("img-active");
         imgAnalysis.classList.toggle("img-active");
         break;
       case "surgery":
         activityTitle.innerText = "Chirurgie";
-        activityDescription.innerText = "Texte chirurgie";
+        // activityDescription.innerText = "Texte chirurgie";
         imgActive.classList.toggle("img-active");
         imgSurgery.classList.toggle("img-active");
         break;
       case "hospital":
         activityTitle.innerText = "Hospitalisation";
-        activityDescription.innerText = "Texte hospitalisation";
+        // activityDescription.innerText = "Texte hospitalisation";
         imgActive.classList.toggle("img-active");
         imgHospital.classList.toggle("img-active");
         break;
       case "food":
         activityTitle.innerText = "Alimentation spécialisée";
-        activityDescription.innerText = "Texte alimentation spécialisée";
+        // activityDescription.innerText = "Texte alimentation spécialisée";
         imgActive.classList.toggle("img-active");
         imgFood.classList.toggle("img-active");
         break;
