@@ -7,6 +7,7 @@
   // padding: $padding-s 0;
   @include media-min($large) {
     gap : 16px;
+    overflow-x: unset;
   }
 }
 
@@ -14,7 +15,7 @@
   display: flex;
   border: solid 1px $secondary-base;
   // box-shadow: $box_shadow;
-  padding: $padding_xs;
+  padding: $padding_xs $padding-s;
   background-color: $background;
   border-radius: 8px;
   cursor: pointer;
