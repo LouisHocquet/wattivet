@@ -1,6 +1,7 @@
 .opening-hours-flex {
   display: flex;
   flex-direction: column;
+  margin-bottom: $padding-m;
   @include media-min($large) {
     flex-direction: row;
     gap: $padding-l;
@@ -22,15 +23,23 @@
 }
 
 .opening-hours-img {
-  display: none;
+  // display: none;
+  min-height: 260px;
+  height: 32vh;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: $box_shadow;
+  @include media-min($medium) {
+    height: 48vh;
+  }
   @include media-min($large) {
-    display: block;
-    border-radius: 8px;
-    box-shadow: $box_shadow;
+    // display: block;
+    // border-radius: 8px;
+    height: unset;
     width: 300px;
     flex-grow: 2;
     max-height: 60vh;
-    object-fit: cover;
+    // object-fit: cover;
   }
 }
 
