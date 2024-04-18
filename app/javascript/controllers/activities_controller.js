@@ -31,7 +31,7 @@ export default class extends Controller {
       case "consultation":
         // activityTitle.innerText = "Consultation";
         activityIcon.classList = "fa-solid fa-stethoscope";
-        activityDescription.innerText = "Nos trois vétérinaires consultent sur rendez-vous du lundi au samedi. Chat ou chien, nous réservons le meilleur accueil à votre compagnon !";
+        activityDescription.innerText = "Nos trois vétérinaires consultent sur rendez-vous du lundi au samedi. Chat ou chien, nous réservons le meilleur accueil à votre compagnon!";
         imgActive.classList.toggle("img-active");
         imgConsultation.classList.toggle("img-active");
         break;
