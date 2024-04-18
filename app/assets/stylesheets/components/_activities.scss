@@ -76,8 +76,36 @@
 }
 
 .activity-description {
+  display: flex;
+  gap: 16px;
+  padding: $padding-m 0;
+  @include media-min($large) {
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    gap: 32px;
+  }
   flex-grow: 1;
+  h3 {
+    width: 100%;
+  }
   @include media-min($medium) {
     width: 300px;
+  }
+  i {
+    display: block;
+    background-color: $primary_base;
+    color: $white;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    text-align: center;
+    align-content: center;
+    @include media-min($large){
+      width: 120px;
+      height: 120px;
+    }
+    border-radius: 100px;
+    font-size: 48px;
   }
 }
