@@ -55,3 +55,15 @@
     display:none;
   }
 }
+
+.display-mobile {
+  @include media-min($medium) {
+    display: none;
+  }
+}
+.display-not-mobile {
+  display: none;
+  @include media-min($medium) {
+    display: unset;
+  }
+}
