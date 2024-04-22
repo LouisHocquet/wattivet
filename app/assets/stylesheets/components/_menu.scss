@@ -20,7 +20,10 @@
 .menu-container-mobile > .menu {
   flex-direction: column;
   justify-content: flex-start;
-  gap: $padding-m;
+  gap: 40px;
+  @include media-min($medium) {
+    gap: 48px;
+  }
   align-items: center;
   padding: $padding-l 0;
   & > .btn-primary {
@@ -31,7 +34,7 @@
 .menu-container-mobile-active {
   display: flex;
   height: 100vh;
-  transition: transform 600ms ease 200ms;
+  transition: transform 400ms ease 200ms;
   transform: translateY(0) translateX(0px);
 }
 
@@ -40,10 +43,10 @@
   flex-grow: 1;
   @include media-min($large) {
     display: flex;
-    max-width: 720px;
+    // max-width: 720px;
   }
   @include media-min($x-large) {
-    max-width: 800px;
+    // max-width: 800px;
   }
 }
 
@@ -52,7 +55,8 @@
   display: flex;
   max-width: 100%;
   flex-grow: 1;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 64px;
   align-items: stretch;
   & > .btn-font {
     color: $gray;
