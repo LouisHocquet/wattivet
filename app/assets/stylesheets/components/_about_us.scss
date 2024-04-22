@@ -1,0 +1,33 @@
+.about-us-flex {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: $padding-m;
+  gap: 24px;
+  @include media-min($large) {
+    flex-direction: row;
+    gap: $padding-l;
+  }
+}
+
+.about-us-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-us-img {
+  min-height: 260px;
+  height: 32vh;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: $box_shadow;
+  @include media-min($medium) {
+    height: 48vh;
+  }
+  @include media-min($large) {
+    height: unset;
+    width: 300px;
+    flex-grow: 2;
+    height: 60vh;
+  }
+}
