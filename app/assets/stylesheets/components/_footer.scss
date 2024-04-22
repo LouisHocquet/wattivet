@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $primary_base;
+  padding: $padding-m $padding-s;
+  p {
+    color: $white;
+  }
+  a {
+    text-decoration: underline;
+    color: $white;
+  }
+}
