@@ -13,7 +13,7 @@
   width: 100%;
   padding-top: 64px;
   z-index: 2;
-  transition: transform 600ms ease 200ms;
+  // transition: transform 200ms ease 200ms;
   transform: translateY(-100vh) translateX(0px);
 }
 
@@ -43,10 +43,8 @@
   flex-grow: 1;
   @include media-min($large) {
     display: flex;
-    // max-width: 720px;
   }
   @include media-min($x-large) {
-    // max-width: 800px;
   }
 }
 
